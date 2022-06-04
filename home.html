@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./vegas.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='maindiv'>
+      <div class="rdivoverlay">
+
+      </div>
+        
+      <div class='ldiv'>
+        <!-- <img src='./bg.png' id="rbg" /> -->
+        <div>
+          <h3 class='t5 h7'>PICT IEEE STUDENT BRANCH</h3>
+          <h4 class='h8 h9'>presents</h4>
+          <h1 class='h8'>CREDENZ TECH DAYS</h1>
+          <h4 class='h8 h9'>Comming Soon!</h4>
+        </div>
+        <div style="margin-top: 30px;" class="f" >
+          <input type="email" name="" id="eid" placeholder="Email-Id">
+          <input type="submit" value="Stay Tuned!" id="sbtn">
+          
+        </div>
+        <div class='bubble'></div>
+      </div>
+      <div class='mdiv'></div>
+        <div id='rdiv'>
+
+        </div>
+        </div>
+
+    </div>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/jaysalvat/vegas/master/dist/vegas.min.js"></script>
+    <script src="./vegas.min.js"></script>
+    
+    <script>
+      $('#rdiv').vegas({
+  overlay: true,
+  transition: 'swirlRight', 
+  transitionDuration: 4000,
+  delay: 10000,
+  animation: 'random',
+  animationDuration: 20000,
+  slides: [
+    { src: '/001.jpeg' },
+    { src: '/002.jpg' },
+    { src: '/003.jpg' },
+    { src: '/004.jpg' },
+    { src: '/005.jpg' },
+    {src:'/006.jpg'},
+    {src:'/007.jpg'}
+    
+  ]
+});
+    </script>
+</body>
+</html>
