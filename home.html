@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="./vegas.min.css">
     <title>Document</title>
@@ -11,26 +12,26 @@
 <body>
     <div class='maindiv'>
       <div class="rdivoverlay">
-
+        <div class='ldiv'>
+          <!-- <img src='./bg.png' id="rbg" /> -->
+          <div>
+            <h3 class='t5 h7'>PICT IEEE STUDENT BRANCH</h3>
+            <h4 class='h8 h9'>presents</h4>
+            <h1 class='h8'>CREDENZ TECH DAYS</h1>
+            <h4 class='h8 h9'>Comming Soon!</h4>
+          </div>
+          <div style="margin-top: 30px;" class="f" >
+            <input type="email" name="" id="eid" placeholder="Email-Id">
+            <input type="submit" value="Stay Tuned!" id="sbtn">
+            
+          </div>
+          <div class='bubble'></div>
+        </div>
       </div>
         
-      <div class='ldiv'>
-        <!-- <img src='./bg.png' id="rbg" /> -->
-        <div>
-          <h3 class='t5 h7'>PICT IEEE STUDENT BRANCH</h3>
-          <h4 class='h8 h9'>presents</h4>
-          <h1 class='h8'>CREDENZ TECH DAYS</h1>
-          <h4 class='h8 h9'>Comming Soon!</h4>
-        </div>
-        <div style="margin-top: 30px;" class="f" >
-          <input type="email" name="" id="eid" placeholder="Email-Id">
-          <input type="submit" value="Stay Tuned!" id="sbtn">
-          
-        </div>
-        <div class='bubble'></div>
-      </div>
+
       <div class='mdiv'></div>
-        <div id='rdiv'>
+        <div id='rdiv' class="box">
 
         </div>
         </div>
@@ -46,10 +47,10 @@
   $('#rdiv').vegas({
 overlay: true,
 transition: 'swirlRight', 
-transitionDuration: 4000,
-delay: 10000,
+transitionDuration: 2000,
+delay: 5000,
 animation: 'random',
-animationDuration: 20000,
+animationDuration: 10000,
 slides: [
 { src: './001.jpeg' },
 { src: './002.jpg' },
